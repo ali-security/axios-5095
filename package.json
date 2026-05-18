@@ -1,6 +1,6 @@
 {
   "name": "axios",
-  "version": "1.15.0",
+  "version": "1.15.0-sp1",
   "description": "Promise based HTTP client for the browser and node.js",
   "main": "./dist/node/axios.cjs",
   "module": "./index.js",
@@ -118,7 +118,8 @@
     "examples": "node ./examples/server.js",
     "lint": "eslint lib/**/*.js",
     "fix": "eslint --fix lib/**/*.js",
-    "prepare": "husky"
+    "prepare": "husky",
+    "prepack": "npm run build"
   },
   "dependencies": {
     "follow-redirects": "^1.15.11",
